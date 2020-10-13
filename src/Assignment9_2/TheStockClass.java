@@ -21,6 +21,30 @@ package Assignment9_2;
 
 public class TheStockClass {
 
+    String symbol;
+    String name;
+    double previousClosingPrice;
+    double currentPrice;
 
+    // all argument constructor + percentage change
+    public TheStockClass(String symbol, String name, double previousClosingPrice, double currentPrice){
+        this.symbol = symbol;
+        this.name = name;
+        this.previousClosingPrice = previousClosingPrice;
+        this.currentPrice = currentPrice;
 
+        getChangePercent(previousClosingPrice,currentPrice);
+    }
+    public TheStockClass(String symbol, String name){
+        this.symbol = symbol;
+        this.name = name;
+    }
+
+    // Method that returns the percentage changed from previousClosingPrice to currentPrice
+    public static double getChangePercent(double previousClosingPrice, double currentPrice){
+        // % increase = Increase ÷ Original Number × 100.
+        double changePercent = ((currentPrice-previousClosingPrice)/previousClosingPrice)*100;
+        return changePercent;
+    }
 }
+
