@@ -26,20 +26,12 @@ public class TheRectangle {
         this.height = height = 1;
     }
 
-    //method getWidth
-    public static double getWidth(double width){
-        return width;
-    }
-
-    //method getHeight
-    public static double getHeight(double height){
-        return height;
-    }
 
     //method named getArea(), that returns the area of the rectangle.
     public double getArea() {
         return this.width * this.height;
     }
+
     //method named getArea(), that returns the area of the rectangle - no arguments
     public static double getArea(double width, double height){
         double area = height*width;
