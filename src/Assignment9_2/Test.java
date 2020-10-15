@@ -11,9 +11,6 @@ package Assignment9_2;
 // and the previous closing price of 34.5.
 // Set a new current price to 34.35 and display the price-change percentage.
 
-
-import Assignment9_1.TheRectangle;
-
 public class Test {
 
     static TheStockClass stock1 = new TheStockClass("ORCL","Oracle Corporation", 34.5, 34.35);
@@ -25,5 +22,4 @@ public class Test {
         System.out.println("Current Price: " + stock1.currentPrice);
         System.out.println("The percentage change: " + TheStockClass.getChangePercent(stock1.previousClosingPrice,stock1.currentPrice) + "%");
     }
-
 }
